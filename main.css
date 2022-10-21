@@ -1,0 +1,302 @@
+/* global */
+*{
+ font-family: 'Times New Roman', Arial, sans-serif;   
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+
+/* 
+How to Stretch Full-Width Using Only CSS
+Here’s how I accomplished this.  I have CSS applied to the class name, .align-full , which is actually what WordPress Gutenberg (block editor) uses when you click the Full Width button on a block that supports it.
+What the first part does is set both the width and max-width to 100vw.  “vw” is a CSS unit of measurement that is a percentage of the viewport width.  So, 100vw is 100% of the viewport width (aka, the browser window).
+The second part uses calc() to calculate half of the width of the container minus half of the viewport width to come up with a negative pixel amount.  That negative pixel amount represents the exact amount of space between the edge of the container and the edge of the screen. Then, I apply that to the left margin.
+*/
+
+.container{
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50.45vw);
+}
+
+/* navbar */
+#navbar>nav>ul>li>a{
+    text-decoration: none;
+    color: #00ffff;
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+}
+
+
+#navbar>nav>ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    background-color: #3A3A3A;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+}
+
+#navbar>nav>ul>li{
+    float: left;
+}
+
+#navbar>nav>ul>li>a:hover{
+    color: #f1f1f1;
+}
+
+
+/* title */
+
+.h1title>h1{
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 70%;
+    color: #f1f1f1;
+    font-size: 5rem;
+}
+
+#divingVideo{
+    position: relative;
+    z-index: -1;
+    top: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
+    overflow-y: scroll;
+
+}
+
+/* factset */
+
+section{
+    margin: 0 5rem 0 5rem;  
+    border-bottom: 2px solid #00ffff;
+}
+.article-container{
+    margin: 3rem 20px 3rem 0;
+    overflow: auto; 
+}
+.article-thumb-left{
+    float: left;
+}
+.article-thumb-right{
+    float: right;
+}
+.article-content{
+    margin-left: 210px;
+}
+.article-title{
+    font-weight: bold;
+    font-size: 200% 
+}
+.article-content>p{
+    color: dodgerblue;  
+    font-size: 15pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imgResize{
+    height: 500px;
+    width: 300px;
+    padding: 25px;
+}
+
+#sourcedLink {
+    text-decoration: none;
+}
+#sourcedLink:hover{
+    text-decoration: none;
+    color: #880808
+}
+#sourcesLink:visited {
+text-decoration: none;
+
+}
+    
+
+/* legal */
+
+#legal{
+    font-size: 1.25rem;
+}
+
+#legal>footer>ul>li>a{
+    text-decoration: none;
+    color: #00ffff;
+}
+
+#legal>footer>ul>li>a:hover{
+    text-decoration: none;
+    color: #ff0000;
+}
+/* Weather Data */
+.weatherData{
+    padding-top: 2rem ;
+    padding-bottom: 2rem ;
+}
+.weatherData>.article-content>.article-title{
+    text-align: center !important;
+}
+.weatherData>.article-content>.article-title>form {
+    text-align: center;
+}
+#WeatherForm {
+    justify-content: center;
+    text-align: center;
+
+}
+#weatherTable {
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+#weathertable td, #weatherTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+#weatherTable tr:nth-child(even){
+    background-color: #f2f2f2;
+
+}
+#weatherTable tr:hover {
+    background-color: #ddd;
+}
+#weatherTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: dodgerblue;
+    color: #fff
+}
+.whereTo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+input[type="text"] {
+    border: 0;
+    width: 50%;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+}
+.button {
+    font-size: 13pt;
+    color: #f1f1f1;
+    background-color: dodgerblue;
+    margin-left: 1rem;
+    height: 2.5rem;
+    width: 6rem;
+}
+
+/* Footer */
+{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  footer {
+    border-top: 3px solid #333333;
+    background-color: dodgerblue;
+    color: #bbb;
+    line-height: 1.5;
+  }
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+  /* Sticks footer to bottom */
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+  }
+  /* Footer main */
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 29.8125rem /* 477px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  @media only screen and (min-width: 77.5rem /* 1240px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  .ft-main-item>#mailTo{
+    list-style-type: none;
+  }
+
+  /* Footer main | Newsletter form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+  }
+  input[type="submit"] {
+    background-color: dodgerblue;
+    border: 1px solid #ffffff;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+  /* Footer social */
+  .ft-social {
+    padding: 0 1.875rem 1.25rem;
+  }
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+.ft-social-list li>a:hover {
+ color: orange;
+}

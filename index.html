@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn to Dive</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#" target="_blank">Scuba Facts</a></li>
+                <li><a href="#" target="_blank">Dive Sites</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Title Start -->
+    <div class="container">
+        <div class="h1title">
+            <h1>Learn to Dive</h1>
+        
+                <video width="100%" height="" autoplay muted loop id="divingVideo">
+                    <source src="Scuba VIDEO-2022.mp4" type="video/mp4">
+                    Your browser cannot play Video
+                </video>
+            <!-- <img src="./imgs/pexels-pixabay-54306.jpg" alt="Old Navy Diver"> -->    
+        </div>
+    </div>
+    
+
+    <!-- Main Body of Text -->
+    <div class="factset">
+        <section>
+            <article>
+                <div class="article-container">
+                <div class="article-thumb-left"><img class="imgResize" src="./imgs/pexels-francesco-ungaro-2289407.jpg" alt=""></div>
+                <div class="article-content">
+                <h2>Make Sure You Are Certified to Dive</h2>
+                
+                
+        <P>Some dive operators require you to have proof of dive certification and/or specialty competency depending on the type of dive. Always gain your dive certification from a licensed dive operator before you travel or before you start diving on your trip.</P>
+
+        <p>
+            Some operators offer introductory dive courses (like a taste tester), however, these are not a green light for you to dive whenever and wherever you want. If you do dive uncertified or if you are uncertified and dive without a certified diver (as required), you won't be covered by travel insurance.
+        </p> 
+
+        <p>Travel insurance policy wordings contain information around cover for scuba diving. Read this carefully before you dive to know and understand what you are covered for. If you have any questions around cover, please ask the insurer for help.</p>
+    </div>
+    </div>
+   </article>
+        </section>
+        <section>
+            <article>
+                <div class="article-container">
+                    <div class="article-thumb-right"><img class="imgResize" src="./imgs/pexels-pixabay-37542.jpg" alt=""></div>
+                    <div class="article-content">
+                <h2 class="article-title">
+                    Make Sure You're Fit to Dive
+                </h2>
+               <p>If you've never been diving before, you should have a medical examination in your home country to ensure you're fit to dive. If you're generally fit and healthy, there should be no problem. You will be required to sign a medical statement before learning to dive.</p> 
+
+               <p>If you're already certified to dive, avoid diving if you're not feeling one hundred percent. In particular, don't dive if you've got a head cold or a hangover. Save the party for the end of your diving trip.</p> 
+               </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="article-container">
+                    <div class="article-thumb-left"><img class="imgResize" src="./imgs/pexels-pixabay-54306.jpg" alt=""></div>
+                    <div class="article-content">
+                <h2 class="article-title">
+                    Double Check All Your Scuba Gear
+                </h2>
+                <p>
+                    En route to the dive site, you will need to set up all your scuba gear. Take your time and double-check everything is working. If you are not sure about anything, don't be embarrassed – ask your guide or instructor.
+                </p>
+
+                <p>Sourced: <a 
+                    id="sourcedLink"
+                    href="https://www.worldnomads.com/travel-safety/worldwide/safe-scuba-diving">www.Worldnomads.com</a></p>
+                </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+<!--WeatherData--->
+
+<section>   
+    <article>
+        <div class="article-container weatherData">
+
+        <div class="article-content">
+            <h2 class="article-title">
+                What is the weather like where we are diving?
+            </h2>
+            <div class="whereTo">
+                <label for ="data"></label>
+                <input type="text" id="data" placeholder="Enter your City, State/Country here..."> <span><button class="button" onclick="getWeatherDataValue()">Search</button></span> 
+               <!---table-->
+               <table id="weatherTable">
+                <tr>
+                    <th>City </th>
+                    <th>State/Country</th>
+                    <th>Tempeture</th>
+                    <th>Description</th>
+                    <th>Wind Speed</th>
+                    <th>Wind Direction</th>
+                    <th>Humidity</th>
+                </tr>
+                <tr id="dataEntry">
+
+                </tr>
+               </table>
+            </div>
+        </div>
+        </div>
+    </article>
+</section>
+
+
+ <!--footer-->
+
+<div class="container"></div>
+<div id="Legal">
+    <footer>
+        <!--Footer Main-->
+
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2>
+                    Contact Info
+                </h2>
+                <ul>
+                    <li>©2022</li>
+                    <li>Lucy Aguilar</li>
+                    <li>AIM Institute</li>
+                    <li><a href="mailto:luceroaguilarc@gmail.com">Email Me!</a></li>
+                </ul>
+            </div>
+        
+            <div class="ft-main-item">
+                <h2 class="ft-title">
+                    Stay Updated
+                </h2>
+                <p>Subscribe to our newsletter to get our latest updates!</p>
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter your email address">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </section>
+    
+        <section class="ft-social">
+        <ul class="ft-social-list">
+               <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a</li>
+                <li><a href=""><i class="fa fa-github"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+        </ul>
+        </section>
+    
+
+    </footer>
+</div>
+<script src="request.js"></script>
+<script src="https://kit.fontawesome.com/bb17c034e4.js" crossorigin="anonymous"></script>
+</body>
+</html>

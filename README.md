@@ -1,1 +1,1 @@
-# Learning-to-dive
+# Learn-to-dive
